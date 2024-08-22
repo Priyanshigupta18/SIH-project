@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styleva.html.css">
+</head>
+<body>
+    <h1>Case Details</h1>
+    <div class="container">
+        <form action="action_page.php">
+            <img src="vartika.jpg" alt="justice" class="center">
+            <br>
+            <div class="row">
+                <div class="col-25">
+                  <label for="judge">Name of Judge</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="judge" name="Judge" placeholder="Name of Judge">
+                </div>
+              </div>
+              <br>
+          <div class="row">
+            <div class="col-25">
+              <label for="cnumber">Case Number</label>
+            </div>
+            <div class="col-75">
+              <input type="number" id="cnumber" name="casenumber" placeholder="Case Number">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="ptiff">Name of Plaintiff</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="ptiff" name="Plaintiff" placeholder="Name of Plaintiff">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="defendant">Name of Defendant</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="defendant" name="Defendant" placeholder="Name of Defendant">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="lawyer">Name of Lawyer</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="lawyer" name="Lawyer" placeholder="Name of Lawyer">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="hearings">Previous Hearings(Total)</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="hearings" name="Hearings" placeholder="Total Number of Hearings">
+            </div>
+          </div>
+        </form>
+        <div class="buttons">
+          <button class="blob-btn">
+            Submit
+            <span class="blob-btn__inner">
+              <span class="blob-btn__blobs">
+                <span class="blob-btn__blob"></span>
+                <span class="blob-btn__blob"></span>
+                <span class="blob-btn__blob"></span>
+                <span class="blob-btn__blob"></span>
+              </span>
+            </span>
+          </button>
+          <br/>
+        </div>
+
+        
+          <defs>
+            <filter id="goo">
+              <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+              <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
+              <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+            </filter>
+          </defs>
+        </svg>
+        
+      </div>
+      </div>
+</body>
+</html>
